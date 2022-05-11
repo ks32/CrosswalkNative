@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity implements XWalkInitializer.
         parent = (FrameLayout) findViewById(R.id.parentMain);
         parent.addView(mXWalkView);
         mXWalkView.load("https://whatismybrowser.com/","");
+        Log.i("qqq","version:"+mXWalkView.getSettings().getUserAgentString());
        // mXWalkView.clearCache(true);
     }
 
