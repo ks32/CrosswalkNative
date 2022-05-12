@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity implements XWalkInitializer.
     }
 
 
-
     @Override
     public void onBackPressed() {
         parent = (FrameLayout) findViewById(R.id.parentMain);
         parent.removeAllViews();
+        finish();
         super.onBackPressed();
     }
 
@@ -72,9 +72,8 @@ public class MainActivity extends AppCompatActivity implements XWalkInitializer.
         mXWalkView.clearCache(true);
         parent = (FrameLayout) findViewById(R.id.parentMain);
         parent.addView(mXWalkView);
-        mXWalkView.load("https://whatismybrowser.com/","");
+        mXWalkView.load("https://www.whatismybrowser.com/","");
         Log.i("qqq","version:"+mXWalkView.getSettings().getUserAgentString());
-       // mXWalkView.clearCache(true);
     }
 
 }
