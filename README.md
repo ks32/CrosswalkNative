@@ -1,6 +1,5 @@
 # CrosswalkNative sample project
-
-emedded chromium 77 for Android.
+chromium 77 for Android. Embedded WebView (xwalk) based on Chromium 77. (A web runtime built on Chrome)
 
 
 ![xwalk](/xwalk-77.jpg)
