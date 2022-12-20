@@ -53,7 +53,7 @@ repositories {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation ('com.pakdata.xwalk:xwalk_main_fat:77.2@aar', {
+    implementation ('com.pakdata.xwalk:xwalk_main_fat:77.3@aar', {
         exclude group: 'org.chromium.base', module: 'ApplicationStatus'
     })
     implementation 'com.google.android.material:material:1.2.0'
